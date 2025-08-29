@@ -10,11 +10,11 @@
 # See /LICENSE for more information.
 #
 
-# 修改默认 IP
+# Modify default IP
 sed -i 's/192.168.1.1/192.168.3.1/g' package/base-files/files/bin/config_generate
 
-# 修改默认主题（示例换成 luci-theme-bootstrap）
+# Modify default theme
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
-# 修改主机名
+# Modify hostname
 sed -i 's/OpenWrt/Ywrt/g' package/base-files/files/bin/config_generate
